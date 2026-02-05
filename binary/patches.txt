@@ -4,3 +4,7 @@
 
 [post_model_sync]
 # Patches added in this section will be executed after doctypes are migrated
+binary.patches.v0_0_1.set_currency_limits
+
+
+binary.patches.v0_0_1.increase_so_currency_range

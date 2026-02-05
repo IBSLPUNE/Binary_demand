@@ -247,3 +247,12 @@ app_license = "mit"
 # List of apps whose translatable strings should be excluded from this app's translations.
 # ignore_translatable_strings_from = []
 
+doc_events = {
+    "Sales Order": {
+        "validate": "binary.api.sales_order.apply_impressions_pricing",
+        "before_save": "binary.api.sales_order.apply_impressions_pricing",
+    }
+}
+override_doctype_class = {
+    "Sales Order": "binary.overrides.sales_order.CustomSalesOrder"
+}
